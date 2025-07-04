@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { Calendar, Users, CreditCard, Bell, Sync, Shield, BarChart, Palette, Smartphone, Settings } from 'lucide-react';
+import { Calendar, Users, CreditCard, Bell, RefreshCw, Shield, BarChart, Palette, Smartphone, Settings } from 'lucide-react';
 
 const features = [
   {
@@ -57,7 +56,7 @@ const features = [
   },
   {
     id: 'calendar',
-    icon: Sync,
+    icon: RefreshCw,
     title: 'Calendar Integration',
     description: 'Sync with Google, Outlook, iCal, Zapier support',
     details: [
