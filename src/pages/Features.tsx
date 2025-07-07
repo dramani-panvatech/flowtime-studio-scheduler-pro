@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import * as anime from 'animejs';
 import { Calendar, Users, CreditCard, Bell, RefreshCw, Settings, BarChart, Palette, Smartphone, Shield, Video, Clock, Star, Zap, Heart, Globe } from 'lucide-react';
@@ -12,7 +11,7 @@ const features = [
   },
   {
     icon: Users,
-    title: "Client Management",
+    title: "Client Management", 
     description: "Comprehensive client profiles with intake forms, attendance tracking, and personalized communications.",
     category: "Client Care"
   },
@@ -108,21 +107,21 @@ const Features = () => {
   useEffect(() => {
     if (featuresRef.current) {
       // Animate feature cards on page load
-      anime({
+      anime.default({
         targets: '.feature-card',
         opacity: [0, 1],
         translateY: [30, 0],
-        delay: anime.stagger(100, {start: 300}),
+        delay: anime.default.stagger(100, {start: 300}),
         duration: 800,
         easing: 'easeOutCubic'
       });
 
       // Animate header elements
-      anime({
+      anime.default({
         targets: '.hero-element',
         opacity: [0, 1],
         translateY: [20, 0],
-        delay: anime.stagger(200),
+        delay: anime.default.stagger(200),
         duration: 600,
         easing: 'easeOutCubic'
       });
@@ -209,4 +208,3 @@ const Features = () => {
 };
 
 export default Features;
-
