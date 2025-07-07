@@ -28,6 +28,9 @@ export interface BookingData {
     specialty: string;
     rating: number;
     image: string;
+    bio: string;
+    nextAvailable: string;
+    experience: string;
   };
   dateTime?: {
     date: string;
