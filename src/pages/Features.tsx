@@ -1,6 +1,6 @@
 
 import React, { useEffect, useRef } from 'react';
-import anime from 'animejs/lib/anime.es.js';
+import anime from 'animejs';
 import { Calendar, Users, CreditCard, Bell, RefreshCw, Settings, BarChart, Palette, Smartphone, Shield, Video, Clock, Star, Zap, Heart, Globe } from 'lucide-react';
 
 const features = [
